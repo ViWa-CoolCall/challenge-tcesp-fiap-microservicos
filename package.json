@@ -5,7 +5,8 @@
   "scripts": {
     "build": "tsc",
     "dev": "clear && ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/shared/infra/http/server.ts",
-    "start": "node dist/src/shared/infra/http/server.js"
+    "start": "node dist/src/shared/infra/http/server.js",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
