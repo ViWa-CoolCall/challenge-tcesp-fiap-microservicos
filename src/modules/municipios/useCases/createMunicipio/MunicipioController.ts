@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 
-import { MunicipioUseCase } from './MunicipioUseCase';
+import { MunicipioUseCase } from './CreateMunicipioUseCase';
 
 class MunicipioController {
   async handle(request: Request, response: Response): Promise<Response> {
@@ -9,12 +9,12 @@ class MunicipioController {
 
     const municipioUseCase = container.resolve(MunicipioUseCase);
 
-    await municipioUseCase.execute({
+    const municipio = await municipioUseCase.execute({
       nome,
       populacao,
     });
 
-    return response.status(201).send();
+    return response.status(201).json(municipio);
   }
 }
 

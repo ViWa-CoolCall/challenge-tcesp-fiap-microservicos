@@ -1,3 +1,4 @@
+import { municipiosRoutes } from 'routes/municipios.routes';
 import { getRepository, Repository } from 'typeorm';
 
 import { ICreateMunicipioDTO } from '../../../dtos/ICreateMunicipioDTO';
@@ -11,14 +12,20 @@ class MunicipioRepository implements IMunicipioRepository {
     this.repository = getRepository(Municipio);
   }
 
-  async create({ nome, populacao }: ICreateMunicipioDTO): Promise<void> {
+  async create({ nome, populacao }: ICreateMunicipioDTO): Promise<Municipio> {
     const municipio = this.repository.create({ nome, populacao });
     await this.repository.save(municipio);
+    return municipio;
   }
 
   async findById(municipio_id: string): Promise<Municipio> {
     const municipio = await this.repository.findOne(municipio_id);
     return municipio;
+  }
+
+  async listAll(): Promise<Municipio[]> {
+    const municipios = this.repository.find();
+    return municipios;
   }
 }
 
