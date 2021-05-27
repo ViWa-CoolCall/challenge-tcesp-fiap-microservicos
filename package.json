@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "14.16.1"
+    "node": "14.17.0"
   },
   "scripts": {
     "dev": "clear && ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
