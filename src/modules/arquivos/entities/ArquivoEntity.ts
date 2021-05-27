@@ -8,7 +8,7 @@ import {
 } from 'typeorm';
 import { v4 as uuidv4 } from 'uuid';
 
-import { Subtema } from './SubtemaEntity';
+import { Subtema } from '../../subtemas/entities/SubtemaEntity';
 
 @Entity('arquivos')
 class Arquivo {

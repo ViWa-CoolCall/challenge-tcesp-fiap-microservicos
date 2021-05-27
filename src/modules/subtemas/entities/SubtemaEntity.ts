@@ -8,7 +8,7 @@ import {
 } from 'typeorm';
 import { v4 as uuidv4 } from 'uuid';
 
-import { Tema } from './TemaEntity';
+import { Tema } from '../../temas/entities/TemaEntity';
 
 @Entity('subtemas')
 class Subtema {

@@ -3,9 +3,7 @@
     "node": "14.16.1"
   },
   "scripts": {
-    "build": "tsc",
-    "dev": "clear && ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/shared/infra/http/server.ts",
-    "start": "node dist/src/shared/infra/http/server.js",
+    "dev": "clear && ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
@@ -14,6 +12,7 @@
     "express": "^4.17.1",
     "pg": "^8.6.0",
     "reflect-metadata": "^0.1.13",
+    "tsyringe": "^4.5.0",
     "typeorm": "^0.2.32",
     "uuid": "^8.3.2"
   },
@@ -32,6 +31,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "prettier": "^2.3.0",
     "ts-node-dev": "^1.1.6",
+    "tsconfig-paths": "^3.9.0",
     "typescript": "^4.2.4"
   }
 }

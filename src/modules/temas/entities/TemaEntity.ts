@@ -8,7 +8,7 @@ import {
 } from 'typeorm';
 import { v4 as uuidv4 } from 'uuid';
 
-import { Municipio } from './MunicipioEntity';
+import { Municipio } from '../../municipios/infra/typeorm/entities/Municipio';
 
 @Entity('temas')
 class Tema {

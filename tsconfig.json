@@ -7,7 +7,7 @@
     "outDir": "./dist",
     // "strict": true,
     "paths": {
-      "@controllers/*": ["controllers/*"],
+      "@modules/*": ["modules/*"],
     },
     "esModuleInterop": true,
     "experimentalDecorators": true,
@@ -15,5 +15,5 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true
-  }
+  },
 }

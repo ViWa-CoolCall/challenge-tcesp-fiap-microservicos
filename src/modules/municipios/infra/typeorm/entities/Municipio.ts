@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 @Entity('municipios')
 class Municipio {
   @PrimaryColumn()
-  munucipio_id?: string;
+  municipio_id?: string;
 
   @Column()
   nome: string;
@@ -19,8 +19,8 @@ class Municipio {
   updated_at: Date;
 
   constructor() {
-    if (!this.munucipio_id) {
-      this.munucipio_id = uuidv4();
+    if (!this.municipio_id) {
+      this.municipio_id = uuidv4();
     }
   }
 }
