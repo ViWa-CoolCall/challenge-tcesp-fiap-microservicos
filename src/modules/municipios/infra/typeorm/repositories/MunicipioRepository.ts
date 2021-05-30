@@ -1,4 +1,3 @@
-import { municipiosRoutes } from 'routes/municipios.routes';
 import { getRepository, Repository } from 'typeorm';
 
 import { ICreateMunicipioDTO } from '../../../dtos/ICreateMunicipioDTO';
@@ -24,7 +23,7 @@ class MunicipioRepository implements IMunicipioRepository {
   }
 
   async listAll(): Promise<Municipio[]> {
-    const municipios = this.repository.find();
+    const municipios = await this.repository.find();
     return municipios;
   }
 }

@@ -5,7 +5,7 @@ import { Municipio } from '../../infra/typeorm/entities/Municipio';
 import { IMunicipioRepository } from '../../repositories/IMunicipioRepository';
 
 @injectable()
-class MunicipioUseCase {
+class CreateMunicipioUseCase {
   constructor(
     @inject('MunicipioRepository')
     private municipiosRepository: IMunicipioRepository
@@ -21,4 +21,4 @@ class MunicipioUseCase {
   }
 }
 
-export { MunicipioUseCase };
+export { CreateMunicipioUseCase };

@@ -1,15 +1,15 @@
 import { Router } from 'express';
 import { container } from 'tsyringe';
 
-import { MunicipioController } from '@modules/municipios/useCases/createMunicipio/MunicipioController';
+import { CreateMunicipioController } from '@modules/municipios/useCases/createMunicipio/CreateMunicipioController';
 import { ListMunicipiosController } from '@modules/municipios/useCases/listMunicipios/ListMunicipiosController';
 
 const municipiosRoutes = Router();
 
-const municipioController = container.resolve(MunicipioController);
-const listMunicipiosController = container.resolve(ListMunicipiosController);
+const createMunicipioController = new CreateMunicipioController();
+const listMunicipiosController = new ListMunicipiosController();
 
-municipiosRoutes.post('/create', municipioController.handle);
+municipiosRoutes.post('/create', createMunicipioController.handle);
 municipiosRoutes.get('/listall', listMunicipiosController.handle);
 
 export { municipiosRoutes };

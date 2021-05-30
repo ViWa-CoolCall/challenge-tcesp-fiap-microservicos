@@ -1,15 +1,15 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 
-import { MunicipioUseCase } from './CreateMunicipioUseCase';
+import { CreateMunicipioUseCase } from './CreateMunicipioUseCase';
 
-class MunicipioController {
+class CreateMunicipioController {
   async handle(request: Request, response: Response): Promise<Response> {
     const { nome, populacao } = request.body;
 
-    const municipioUseCase = container.resolve(MunicipioUseCase);
+    const createMunicipioUseCase = container.resolve(CreateMunicipioUseCase);
 
-    const municipio = await municipioUseCase.execute({
+    const municipio = await createMunicipioUseCase.execute({
       nome,
       populacao,
     });
@@ -18,4 +18,4 @@ class MunicipioController {
   }
 }
 
-export { MunicipioController };
+export { CreateMunicipioController };
