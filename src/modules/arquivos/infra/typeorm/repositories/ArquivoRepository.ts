@@ -16,11 +16,13 @@ class ArquivoRepository implements IArquivoRepository {
     formato,
     url,
     completo,
+    public_id,
     subtema_id,
   }: ICreateArquivoDTO): Promise<Arquivo> {
     const arquivo = await this.repository.create({
       formato,
       url,
+      public_id,
       completo,
       subtema_id,
     });

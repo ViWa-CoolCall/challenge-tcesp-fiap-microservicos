@@ -25,6 +25,9 @@ class Arquivo {
   completo: boolean;
 
   @Column()
+  public_id: string;
+
+  @Column()
   subtema_id: string;
 
   @CreateDateColumn()
