@@ -13,7 +13,8 @@ class SubtemaRepository implements ISubtemaRepository {
   }
 
   async create({ nome, tema_id }: ICreateSubtemaDTO): Promise<Subtema> {
-    const subtema = await this.repository.create({ nome, tema_id });
+    const subtema = this.repository.create({ nome, tema_id });
+    await this.repository.save(subtema);
     return subtema;
   }
 
