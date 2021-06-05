@@ -14,7 +14,7 @@ container.registerSingleton<IMunicipioRepository>(
   MunicipioRepository
 );
 
-container.registerSingleton<ITemaRepository>('TemaReposwitory', TemaRepository);
+container.registerSingleton<ITemaRepository>('TemaRepository', TemaRepository);
 
 container.registerSingleton<ISubtemaRepository>(
   'SubtemaRepository',
