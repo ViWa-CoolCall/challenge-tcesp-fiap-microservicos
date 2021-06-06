@@ -17,11 +17,6 @@ class TemaRepository implements ITemaRepository {
     return tema;
   }
 
-  async findById(tema_id: string): Promise<Tema> {
-    const tema = await this.repository.findOne(tema_id);
-    return tema;
-  }
-
   async listAll(): Promise<Tema[]> {
     const temas = await this.repository.find();
     return temas;

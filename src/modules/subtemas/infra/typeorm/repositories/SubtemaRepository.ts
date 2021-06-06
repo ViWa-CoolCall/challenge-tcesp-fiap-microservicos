@@ -18,11 +18,6 @@ class SubtemaRepository implements ISubtemaRepository {
     return subtema;
   }
 
-  async findById(subtema_id: string): Promise<Subtema> {
-    const subtema = await this.repository.findOne(subtema_id);
-    return subtema;
-  }
-
   async listAll(): Promise<Subtema[]> {
     const subtemas = await this.repository.find();
     return subtemas;
