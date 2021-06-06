@@ -1,7 +1,6 @@
 import { Router } from 'express';
-
-import { ListAllArquivosController } from '@modules/arquivos/useCases/listAll/ListAllArquivosController';
-import { UploadArquivoController } from '@modules/arquivos/useCases/UploadArquivo/UploadArquivoController';
+import { ListAllArquivosController } from 'modules/arquivos/useCases/listAll/ListAllArquivosController';
+import { UploadArquivoController } from 'modules/arquivos/useCases/UploadArquivo/UploadArquivoController';
 
 const arquivosRoutes = Router();
 

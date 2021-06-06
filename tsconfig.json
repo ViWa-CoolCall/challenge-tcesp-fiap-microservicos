@@ -6,9 +6,6 @@
     "baseUrl": "./src",
     "outDir": "./dist",
     // "strict": true,
-    "paths": {
-      "@modules/*": ["modules/*"],
-    },
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,

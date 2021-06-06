@@ -1,7 +1,6 @@
 import { inject, injectable } from 'tsyringe';
 
-import { Arquivo } from '@modules/arquivos/infra/typeorm/entities/Arquivo';
-
+import { Arquivo } from '../../infra/typeorm/entities/Arquivo';
 import { IArquivoRepository } from '../../repositories/IArquivoRepository';
 
 @injectable()

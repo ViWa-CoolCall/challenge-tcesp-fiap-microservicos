@@ -1,8 +1,8 @@
 import { inject, injectable } from 'tsyringe';
 
-import { ICreateTemaDTO } from '@modules/temas/dtos/ICreateTemaDTO';
-import { Tema } from '@modules/temas/infra/typeorm/entities/Tema';
-import { ITemaRepository } from '@modules/temas/repositories/ITemaRepository';
+import { ICreateTemaDTO } from '../../dtos/ICreateTemaDTO';
+import { Tema } from '../../infra/typeorm/entities/Tema';
+import { ITemaRepository } from '../../repositories/ITemaRepository';
 
 @injectable()
 class CreateTemaUseCase {

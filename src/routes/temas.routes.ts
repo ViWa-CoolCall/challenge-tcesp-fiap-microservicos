@@ -1,7 +1,6 @@
 import { Router } from 'express';
-
-import { CreateTemaController } from '@modules/temas/useCases/createTema/CreateTemaController';
-import { ListAllTemasController } from '@modules/temas/useCases/listAll/ListAllTemasController';
+import { CreateTemaController } from 'modules/temas/useCases/createTema/CreateTemaController';
+import { ListAllTemasController } from 'modules/temas/useCases/listAll/ListAllTemasController';
 
 const temasRoutes = Router();
 

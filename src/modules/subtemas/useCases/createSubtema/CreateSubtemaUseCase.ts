@@ -1,8 +1,8 @@
 import { inject, injectable } from 'tsyringe';
 
-import { ICreateSubtemaDTO } from '@modules/subtemas/dtos/ICreateSubtemaDTO';
-import { Subtema } from '@modules/subtemas/infra/typeorm/entities/Subtema';
-import { ISubtemaRepository } from '@modules/subtemas/repositories/ISubtemaRepository';
+import { ICreateSubtemaDTO } from '../../dtos/ICreateSubtemaDTO';
+import { Subtema } from '../../infra/typeorm/entities/Subtema';
+import { ISubtemaRepository } from '../../repositories/ISubtemaRepository';
 
 @injectable()
 class CreateSubtemaUseCase {

@@ -1,7 +1,7 @@
 import { inject, injectable } from 'tsyringe';
 
-import { Subtema } from '@modules/subtemas/infra/typeorm/entities/Subtema';
-import { ISubtemaRepository } from '@modules/subtemas/repositories/ISubtemaRepository';
+import { Subtema } from '../../infra/typeorm/entities/Subtema';
+import { ISubtemaRepository } from '../../repositories/ISubtemaRepository';
 
 @injectable()
 class ListAllSubtemasUseCase {

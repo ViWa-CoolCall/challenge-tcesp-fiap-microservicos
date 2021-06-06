@@ -1,8 +1,7 @@
 import { Router } from 'express';
+import { CreateMunicipioController } from 'modules/municipios/useCases/createMunicipio/CreateMunicipioController';
+import { ListMunicipiosController } from 'modules/municipios/useCases/listMunicipios/ListMunicipiosController';
 import { container } from 'tsyringe';
-
-import { CreateMunicipioController } from '@modules/municipios/useCases/createMunicipio/CreateMunicipioController';
-import { ListMunicipiosController } from '@modules/municipios/useCases/listMunicipios/ListMunicipiosController';
 
 const municipiosRoutes = Router();
 

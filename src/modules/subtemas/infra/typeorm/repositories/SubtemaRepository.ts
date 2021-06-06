@@ -1,7 +1,6 @@
 import { getRepository, Repository } from 'typeorm';
 
-import { ICreateSubtemaDTO } from '@modules/subtemas/dtos/ICreateSubtemaDTO';
-
+import { ICreateSubtemaDTO } from '../../../dtos/ICreateSubtemaDTO';
 import { ISubtemaRepository } from '../../../repositories/ISubtemaRepository';
 import { Subtema } from '../entities/Subtema';
 

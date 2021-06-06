@@ -1,8 +1,7 @@
 import { getRepository, Repository } from 'typeorm';
 
-import { ICreateArquivoDTO } from '@modules/arquivos/dtos/ICreateArquivoDTO';
-import { IArquivoRepository } from '@modules/arquivos/repositories/IArquivoRepository';
-
+import { ICreateArquivoDTO } from '../../../dtos/ICreateArquivoDTO';
+import { IArquivoRepository } from '../../../repositories/IArquivoRepository';
 import { Arquivo } from '../entities/Arquivo';
 
 class ArquivoRepository implements IArquivoRepository {

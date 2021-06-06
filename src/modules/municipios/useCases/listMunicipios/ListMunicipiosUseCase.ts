@@ -1,7 +1,7 @@
 import { inject, injectable } from 'tsyringe';
 
-import { Municipio } from '@modules/municipios/infra/typeorm/entities/Municipio';
-import { IMunicipioRepository } from '@modules/municipios/repositories/IMunicipioRepository';
+import { Municipio } from '../../infra/typeorm/entities/Municipio';
+import { IMunicipioRepository } from '../../repositories/IMunicipioRepository';
 
 @injectable()
 class ListMunicipiosUseCase {

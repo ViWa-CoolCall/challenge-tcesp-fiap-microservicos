@@ -1,7 +1,7 @@
 import { inject, injectable } from 'tsyringe';
 
-import { Tema } from '@modules/temas/infra/typeorm/entities/Tema';
-import { ITemaRepository } from '@modules/temas/repositories/ITemaRepository';
+import { Tema } from '../../infra/typeorm/entities/Tema';
+import { ITemaRepository } from '../../repositories/ITemaRepository';
 
 @injectable()
 class ListAllTemasUseCase {

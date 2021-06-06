@@ -1,8 +1,7 @@
 import { getRepository, Repository } from 'typeorm';
 
-import { ICreateTemaDTO } from '@modules/temas/dtos/ICreateTemaDTO';
-import { ITemaRepository } from '@modules/temas/repositories/ITemaRepository';
-
+import { ICreateTemaDTO } from '../../../dtos/ICreateTemaDTO';
+import { ITemaRepository } from '../../../repositories/ITemaRepository';
 import { Tema } from '../entities/Tema';
 
 class TemaRepository implements ITemaRepository {

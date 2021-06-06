@@ -1,9 +1,8 @@
 import cloudinary from 'cloudinary';
 import { inject, injectable } from 'tsyringe';
 
-import { Arquivo } from '@modules/arquivos/infra/typeorm/entities/Arquivo';
-
 import * as cloudinaryConfig from '../../../../config/cloudinary';
+import { Arquivo } from '../../infra/typeorm/entities/Arquivo';
 import { IArquivoRepository } from '../../repositories/IArquivoRepository';
 
 @injectable()
