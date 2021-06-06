@@ -30,8 +30,8 @@ class ArquivoRepository implements IArquivoRepository {
     return arquivo;
   }
 
-  async listAll(subtema_id: string): Promise<Arquivo[]> {
-    const arquivos = await this.repository.find({ where: { subtema_id } });
+  async listAll(): Promise<Arquivo[]> {
+    const arquivos = await this.repository.find();
     return arquivos;
   }
 }

@@ -10,8 +10,8 @@ class ListAllArquivosUseCase {
     @inject('ArquivoRepository')
     private arquivoRepository: IArquivoRepository
   ) {}
-  async execute(subtema_id: string): Promise<Arquivo[]> {
-    const arquivos = await this.arquivoRepository.listAll(subtema_id);
+  async execute(): Promise<Arquivo[]> {
+    const arquivos = await this.arquivoRepository.listAll();
     return arquivos;
   }
 }

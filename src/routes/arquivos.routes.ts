@@ -9,6 +9,6 @@ const UploadArquivosController = new UploadArquivoController();
 const listAllArquivosController = new ListAllArquivosController();
 
 arquivosRoutes.post('/upload', UploadArquivosController.handle);
-arquivosRoutes.get('/listall/:subtema_id', listAllArquivosController.handle);
+arquivosRoutes.get('/listall', listAllArquivosController.handle);
 
 export { arquivosRoutes };

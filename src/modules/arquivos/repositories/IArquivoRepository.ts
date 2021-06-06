@@ -3,7 +3,7 @@ import { Arquivo } from '../infra/typeorm/entities/Arquivo';
 
 interface IArquivoRepository {
   create(data: ICreateArquivoDTO): Promise<Arquivo>;
-  listAll(subtema_id: string): Promise<Arquivo[]>;
+  listAll(): Promise<Arquivo[]>;
 }
 
 export { IArquivoRepository };

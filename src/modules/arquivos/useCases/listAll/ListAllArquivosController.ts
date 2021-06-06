@@ -5,12 +5,10 @@ import { ListAllArquivosUseCase } from './ListAllArquivosUseCase';
 
 class ListAllArquivosController {
   async handle(request: Request, response: Response): Promise<Response> {
-    const { subtema_id } = request.params;
-
     const listAllArquivosUseCaseUseCase = container.resolve(
       ListAllArquivosUseCase
     );
-    const arquivos = await listAllArquivosUseCaseUseCase.execute(subtema_id);
+    const arquivos = await listAllArquivosUseCaseUseCase.execute();
 
     return response.status(201).json(arquivos);
   }
