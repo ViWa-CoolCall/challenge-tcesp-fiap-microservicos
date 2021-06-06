@@ -3,6 +3,7 @@
     "node": "14.17.0"
   },
   "scripts": {
+    "build": "tsc",
     "dev": "clear && ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
     "start": "node dist/src/server.js",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
