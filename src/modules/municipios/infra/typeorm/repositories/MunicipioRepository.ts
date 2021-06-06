@@ -17,11 +17,6 @@ class MunicipioRepository implements IMunicipioRepository {
     return municipio;
   }
 
-  async findById(municipio_id: string): Promise<Municipio> {
-    const municipio = await this.repository.findOne(municipio_id);
-    return municipio;
-  }
-
   async listAll(): Promise<Municipio[]> {
     const municipios = await this.repository.find();
     return municipios;
