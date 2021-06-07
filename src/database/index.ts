@@ -9,7 +9,7 @@ export default async (): Promise<Connection> => {
       database:
         process.env.NODE_ENV === 'development'
           ? 'challenge-api'
-          : defaultOptions.database,
+          : process.env.DATABASE_NAME,
     })
   );
 };
