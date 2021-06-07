@@ -4,6 +4,13 @@
 
 ### Challenge TCESP - API - Disciplina de Microserviços
 
+## Fluxo da aplicação
+A base da nossa aplicação gira em torno do crawler. O crawler irá processar os dados dos arquivos dos portais de transparência e verificar se há informações faltando. Ao completar os processamentos necessários, o Crawler chama a API para fazer upload dos arquivos.
+
+A API também servirá aos clientes web e mobile, que seguirão o seguinte fluxo: O cidadão escolhe a cidade que deseja verificar as informações de transparência, depois escolhe o tema, por exemplo covid. Depois escolhe o subtema, por exemplo despesas. Após selecionar o subtema, o usuário terá acesso aos arquivos em diferentes formatos relacionados ao subtema escolhido.
+
+Esse é o fluxo base da API da nossa aplicação, podendo sofrer alterações no decorrer do desenvolvimento do projeto, no 2º semestre.
+
 ## Rotas do projeto - Heroku
 ###### No primeiro acesso, pode levar vários segundos para carregar, devido à hospedagem gratuita (Dynos do Heroku dormindo 😴).
 
