@@ -1,4 +1,4 @@
-const rootDir = process.env.NODE_ENV === 'development' ? './dist' : './dist';
+const rootDir = process.env.NODE_ENV === 'development' ? './src' : './dist';
 
 module.exports = {
   type: 'postgres',
