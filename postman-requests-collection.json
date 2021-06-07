@@ -1,0 +1,244 @@
+{
+	"info": {
+		"_postman_id": "2110941e-81a0-4292-9f33-ad56197b1e2a",
+		"name": "Challenge-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Municipios",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Santos\",\r\n    \"populacao\": 433600\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://viwa-api.herokuapp.com/municipios/create",
+							"protocol": "https",
+							"host": [
+								"viwa-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"municipios",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://viwa-api.herokuapp.com/municipios/listall",
+							"protocol": "https",
+							"host": [
+								"viwa-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"municipios",
+								"listall"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Temas",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"balancetes\",\r\n    \"municipio_id\": \"9683b973-5347-4195-bf42-ba8b203795b4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://viwa-api.herokuapp.com/temas/create",
+							"protocol": "https",
+							"host": [
+								"viwa-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"temas",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://viwa-api.herokuapp.com/temas/listall",
+							"protocol": "https",
+							"host": [
+								"viwa-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"temas",
+								"listall"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subtemas",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"subtema tal\",\r\n    \"tema_id\": \"f693b6f1-a5c5-46de-833d-b2766600c33a\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://viwa-api.herokuapp.com/subtemas/create",
+							"protocol": "https",
+							"host": [
+								"viwa-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"subtemas",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://viwa-api.herokuapp.com/subtemas/listall",
+							"protocol": "https",
+							"host": [
+								"viwa-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"subtemas",
+								"listall"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Arquivos",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "subtema_id",
+									"value": "50038087-4334-442d-b76f-f6a812047950",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://viwa-api.herokuapp.com/arquivos/upload",
+							"protocol": "https",
+							"host": [
+								"viwa-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"arquivos",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://viwa-api.herokuapp.com/arquivos/listall",
+							"protocol": "https",
+							"host": [
+								"viwa-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"arquivos",
+								"listall"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
