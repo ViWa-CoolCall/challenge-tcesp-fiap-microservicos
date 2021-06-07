@@ -1,10 +1,11 @@
 <h1>
-  <img alt="ViWa Cool Call Logo" title="ViWa Cool Call Logo" src=".github/viwa.png" width="100px" />
+  <img alt="ViWa Cool Call Logo" title="ViWa Cool Call Logo" src=".github/viwa.png" width="125px" />
 </h1>
 
 ### Challenge TCESP - API - Disciplina de Microserviços
 
 ## Rotas do projeto - Heroku
+###### No primeiro acesso, pode levar vários segundos para carregar, devido à hospedagem gratuita (Dynos do Heroku dormindo 😴).
 
 - [Listar municipios](https://viwa-api.herokuapp.com/municipios/listall)
 
