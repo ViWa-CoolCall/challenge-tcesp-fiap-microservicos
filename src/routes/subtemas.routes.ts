@@ -1,6 +1,7 @@
 import { Router } from 'express';
-import { CreateSubtemaController } from 'modules/subtemas/useCases/createSubtema/CreateSubtemaController';
-import { ListAllsubtemasController } from 'modules/subtemas/useCases/listAll/ListAllsubtemasController';
+
+import { CreateSubtemaController } from '../modules/subtemas/useCases/createSubtema/CreateSubtemaController';
+import { ListAllsubtemasController } from '../modules/subtemas/useCases/listAll/ListAllsubtemasController';
 
 const subtemasRoutes = Router();
 
