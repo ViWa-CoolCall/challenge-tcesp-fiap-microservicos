@@ -10,9 +10,12 @@ class UploadArquivoController {
 
     const uploadArquivoUseCase = container.resolve(UploadArquivoUseCase);
 
-    await uploadArquivoUseCase.execute(tempFilePath, subtema_id);
+    const arquivo = await uploadArquivoUseCase.execute(
+      tempFilePath,
+      subtema_id
+    );
 
-    return response.status(201).json('foi');
+    return response.status(201).json(arquivo);
   }
 }
 export { UploadArquivoController };
